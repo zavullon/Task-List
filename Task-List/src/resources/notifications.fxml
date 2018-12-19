@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.userinterface.NotificationsController">
+   <children>
+      <TableView fx:id="notificationTableView" layoutX="25.0" layoutY="14.0" prefHeight="525.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="taskTableColumn" prefWidth="150.0" text="Task" />
+          <TableColumn fx:id="dateTableColumn" prefWidth="150.0" text="Date" />
+            <TableColumn fx:id="userTableColumn" prefWidth="150.0" text="Creator" />
+            <TableColumn fx:id="messageColumn" prefWidth="150.0" text="Message" />
+            <TableColumn fx:id="answerTableColumn" prefWidth="150.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="561.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="applyButton" layoutX="76.0" layoutY="561.0" mnemonicParsing="false" text="apply" />
+   </children>
+</AnchorPane>

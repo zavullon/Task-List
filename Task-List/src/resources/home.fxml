@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.userinterface.HomeController">
+   <children>
+      <Text layoutX="25.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="from:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="246.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to:" wrappingWidth="32.54588842391968">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TableView fx:id="taskTable" layoutX="25.0" layoutY="53.0" prefHeight="500.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="Date" prefWidth="150.0" text="Date" />
+          <TableColumn fx:id="Subject" prefWidth="150.0" text="Subject" />
+            <TableColumn fx:id="Type" prefWidth="150.0" text="Type" />
+            <TableColumn fx:id="Access" prefWidth="150.0" text="Access" />
+            <TableColumn fx:id="Creator" prefWidth="150.0" text="Creator" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="fromDatePicker" layoutX="62.0" layoutY="14.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="279.0" layoutY="14.0" />
+      <Button fx:id="deleteButton" layoutX="724.0" layoutY="560.0" mnemonicParsing="false" prefWidth="50.0" text="delete" />
+      <Button fx:id="addButton" layoutX="25.0" layoutY="560.0" mnemonicParsing="false" prefWidth="50.0" text="add" />
+      <Button fx:id="notificationsButton" layoutX="693.0" layoutY="14.0" mnemonicParsing="false" text="notifications" />
+      <Button fx:id="applyButton" layoutX="84.0" layoutY="560.0" mnemonicParsing="false" text="apply" />
+      <DatePicker fx:id="deleteDatePicker" layoutX="540.0" layoutY="560.0" />
+      <ProgressBar fx:id="progressBar" layoutX="146.0" layoutY="564.0" prefHeight="18.0" prefWidth="378.0" progress="0.0" />
+   </children>
+</AnchorPane>

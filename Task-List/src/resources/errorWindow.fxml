@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.userinterface.ErrorController">
+   <children>
+      <Text fx:id="errorText" layoutX="35.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR! Check your data" />
+      <Button fx:id="okButton" layoutX="85.0" layoutY="60.0" mnemonicParsing="false" text="ok" />
+   </children>
+</AnchorPane>
